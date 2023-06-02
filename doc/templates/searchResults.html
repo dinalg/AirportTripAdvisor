@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #a3b0ff;
+                padding-top: 5%;
+            }
+
+            button {
+                border-radius: 8px;
+                border-width: 1;
+                cursor: pointer;
+                font-weight: 500;
+                line-height: 20px;
+                list-style: none;
+                margin: 0;
+                text-align: center;
+                vertical-align: baseline;
+                white-space: nowrap;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                display: inline-block;
+                color: rgb(0, 0, 0);
+                padding: 10px 12px;
+                font-size: 20px;
+                background: linear-gradient(#0000, rgb(0 0 0/40%)) top/100% 800%;
+                background-color: #c9d1ff;
+                transition: 0.5s;
+            }
+            
+            button:hover {
+                background-position: bottom;
+            }
+            
+            p {
+                text-align: center;
+                justify-content: center;
+            }
+
+            g {
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <p><g><b>{{var}} Results (Top 15)</b></g></p>
+        <br>
+        <tr><p>
+            <td>{{results[0]}}</td><br>
+            <td>{{results[1]}}</td><br>
+            <td>{{results[2]}}</td><br>
+            <td>{{results[3]}}</td><br>
+            <td>{{results[4]}}</td><br>
+            <td>{{results[5]}}</td><br>
+            <td>{{results[6]}}</td><br>
+            <td>{{results[7]}}</td><br>
+            <td>{{results[8]}}</td><br>
+            <td>{{results[9]}}</td><br>
+            <td>{{results[10]}}</td><br>
+            <td>{{results[11]}}</td><br>
+            <td>{{results[12]}}</td><br>
+            <td>{{results[13]}}</td><br>
+            <td>{{results[14]}}</td><br>
+        </p></tr>
+        <br><p><a href="/"><button>Back</button></a></p>
+    </body>
+</html>

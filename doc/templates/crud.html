@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #a3b0ff;
+                padding-top: 5%;
+            }
+
+            button {
+                border-radius: 8px;
+                border-width: 1;
+                cursor: pointer;
+                font-weight: 500;
+                line-height: 20px;
+                list-style: none;
+                margin: 0;
+                text-align: center;
+                vertical-align: baseline;
+                white-space: nowrap;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                display: inline-block;
+                color: rgb(0, 0, 0);
+                padding: 10px 12px;
+                font-size: 20px;
+                background: linear-gradient(#0000, rgb(0 0 0/40%)) top/100% 800%;
+                background-color: #c9d1ff;
+                transition: 0.5s;
+            }
+            
+            button:hover {
+                background-position: bottom;
+            }
+            
+            p {
+                text-align: center;
+                justify-content: center;
+            }
+
+            g {
+                font-size: 25px;
+            }
+
+            hr {
+                height:2px;
+                border-width:0;
+                background-color:#c9d1ff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form method = "POST" action = "/search">
+            <p><b><g>Search</g></b><br>
+            <br>
+            <label>
+                <input type="radio" name="list" value="airlines"/>Airlines
+            </label>
+            <label>
+                <input type="radio" name="list" value="airports"/>Airports
+            </label>
+            <label>
+                <input type="radio" name="list" value="covid"/>Covid Data
+            </label>
+            <label>
+                <input type="radio" name="list" value="reviews"/>Reviews
+            </label>
+            <label>
+                <input type="radio" name="list" value="User"/>User
+            </label>
+            <br><br>
+            <input style="height:35px;font-size:14pt;" type="text" id="search" name="search">
+            <button><input type="submit" name="submit_button" value="Search"></button></p>
+        </form>
+
+        <br><hr><br>
+
+        <form method = "POST" action="/trip-planner">
+            <p><button> Plan Trip </button></p>
+        </form>
+
+        <form method = "POST" action="/add-review">
+            <p><button> Add Review </button></p>
+        </form>
+
+        <form method = "POST" action="/add-user">
+            <p><button> Add User </button></p>
+        </form>
+
+        <form method = "POST" action="/change-password">
+            <p><button> Change Password </button></p>
+        </form>
+
+        <form method = "POST" action="/delete-user">
+            <p><button> Delete User </button></p>
+        </form>
+
+        <br><hr><br>
+
+        <form method = "POST" action = "/query1">
+            <p><button> Advanced Query 1 </button></p>
+        </form>
+
+        <form method = "POST" action = "/query2">
+            <p><button> Advanced Query 2 </button></p>
+        </form>
+
+        <form method = "POST" action = "/stored-procedure">
+            <p><button> View Airline Descriptions </button></p>
+        </form>
+    </body>
+</html>
